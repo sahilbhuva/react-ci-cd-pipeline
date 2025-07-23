@@ -1,12 +1,92 @@
-# React + Vite
+# React CI/CD Pipeline Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is a demonstration project showcasing a modern React application with a Continuous Integration and Continuous Deployment (CI/CD) workflow using GitHub Actions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- React 19 with Vite
+- Routing with React Router
+- Tailwind CSS for styling
+- GitHub Actions for CI/CD
+- Automated deployment to GitHub Pages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+
+- `src/`: Source code directory
+  - `components/`: Reusable React components
+  - `pages/`: Top-level page components
+  - `App.jsx`: Main application routing
+  - `main.jsx`: Application entry point
+
+## Dashboard Insights
+
+The dashboard provides real-time information about:
+- Application Name
+- Version
+- Deployment Environment
+- GitHub Actions Run ID
+- Current Commit SHA
+
+## Pipeline Status
+
+The application includes a Pipeline Status page that shows the steps of the CI/CD process:
+- Code Checkout
+- Install Dependencies
+- Lint Code
+- Run Tests
+- Build Project
+- Deploy to GitHub Pages
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18+)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development
+
+- Run development server:
+  ```bash
+  npm run dev
+  ```
+
+- Build for production:
+  ```bash
+  npm run build
+  ```
+
+- Lint code:
+  ```bash
+  npm run lint
+  ```
+
+## CI/CD Workflow
+
+This project uses GitHub Actions for:
+- Automated testing
+- Code linting
+- Building the application
+- Deploying to GitHub Pages
+
+## Technologies
+
+- React 19
+- Vite
+- React Router
+- Tailwind CSS
+- GitHub Actions
+
+## License
+
+[Add your license information here]
